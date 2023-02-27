@@ -7,15 +7,15 @@ const Parent = () => {
     let [count, setCount] = useState(0);
 
     const handleUp = () => {
-        setCount(count++)
+        setCount(count+1)
     }
     const handleDown = () => {
-        setCount(count--)
+        setCount(count-1)
     }
     return (
         <>
-            <div>{count}</div>
-            <div className="button-group    ">
+            <div style={{margin:"5px 10px"}}>Count:{count}</div>
+            <div className="button-group`">
             <UpButton handleUp={handleUp} />
             <DownButton handleDown={handleDown} />
             </div>
